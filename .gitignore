@@ -1,13 +1,19 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+<<<<<<< HEAD
 *$py.class
+=======
+/.venv
+/.pytest_cache
+>>>>>>> 19d51af (feat: initial commit)
 
 # C extensions
 *.so
 
 # Distribution / packaging
 .Python
+<<<<<<< HEAD
 build/
 develop-eggs/
 dist/
@@ -15,10 +21,19 @@ downloads/
 eggs/
 .eggs/
 lib/
+=======
+env/
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+>>>>>>> 19d51af (feat: initial commit)
 lib64/
 parts/
 sdist/
 var/
+<<<<<<< HEAD
 wheels/
 share/python-wheels/
 *.egg-info/
@@ -31,6 +46,12 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+=======
+*.egg-info/
+.installed.cfg
+*.egg
+*.eggs
+>>>>>>> 19d51af (feat: initial commit)
 
 # Installer logs
 pip-log.txt
@@ -39,6 +60,7 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+<<<<<<< HEAD
 .nox/
 .coverage
 .coverage.*
@@ -67,10 +89,40 @@ instance/
 
 # Scrapy stuff:
 .scrapy
+=======
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Pycharm
+.idea
+
+# Eclipse
+.settings
+
+# OSX Files
+.DS_Store
+
+# Django stuff:
+*.log
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+>>>>>>> 19d51af (feat: initial commit)
 
 # Sphinx documentation
 docs/_build/
 
+<<<<<<< HEAD
 # PyBuilder
 .pybuilder/
 target/
@@ -158,3 +210,11 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+=======
+# Backup files
+*~
+*.swp
+
+# OCA rules
+!static/lib/
+>>>>>>> 19d51af (feat: initial commit)

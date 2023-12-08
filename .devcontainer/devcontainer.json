@@ -1,0 +1,55 @@
+{
+	"name": "Odoo 17",
+	"build": {
+		"dockerfile": "Dockerfile"
+	  },
+	"forwardPorts": [
+		8069
+	],
+	"runArgs": [
+		"--network=postgres_net"
+	],
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add settings
+			"settings": {
+				"[python]": {
+					"pythonPath": "/usr/bin/python3",
+					"analysis.extraPaths": [
+						"/usr/lib/python3/dist-packages/odoo/addons",
+						"/var/lib/odoo/addons/17.0"
+					],
+					"autoComplete.extraPaths": [
+						"/usr/lib/python3/dist-packages/odoo/addons",
+						"/var/lib/odoo/addons/17.0"
+					],
+					"editor.formatOnType": true,
+					"editor.formatOnSaveMode": "file",
+					"editor.formatOnSave": true,
+					"editor.defaultFormatter": "ms-python.black-formatter",
+					"linting.pylintEnabled": true,
+					"linting.enabled": true,
+					"linting.pylintArgs": [
+						"--load-plugins",
+						"pylint_odoo"
+					]
+				},
+				"workbench.colorCustomizations": {
+					"titleBar.activeBackground": "#004b27"
+				}
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-python.python",
+				"ms-python.pylint",
+				"ms-python.black-formatter",
+				"njpwerner.autodocstring",
+				"jigar-patel.OdooSnippets"
+			]
+		}
+	},
+	// Set `remoteUser` to `root` to connect as root instead
+	"remoteUser": "odoo"
+}
